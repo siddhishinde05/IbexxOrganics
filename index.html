@@ -1,170 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IBEXX Organics</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- Bootstrap CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <style>
-        .navbar-nav .nav-link {
-            transition: 0.3s;
-        }
+  <title>Ibexx Organics | Premium Packaged Drinking Water & Beverages</title>
+  <meta name="description" content="Ibexx Organics is a Chhattisgarh-based indigenous brand delivering premium packaged drinking water and refreshing beverages with world-class quality and safety standards." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Ibexx Organics" />
+  <link rel="canonical" href="https://www.ibexxorganics.com/" />
 
-        .navbar-nav .nav-link:hover {
-            color: orange !important;
-        }
-    </style>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ibexx Organics | Pure Hydration, Fresh in Every Drop" />
+  <meta property="og:description" content="Premium packaged drinking water and refreshing beverages crafted with excellence." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.ibexxorganics.com/" />
+  <meta property="og:image" content="https://www.ibexxorganics.com/assets/img/og-banner.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ibexx Organics | Pure Hydration, Fresh in Every Drop" />
+  <meta name="twitter:description" content="Premium packaged drinking water and refreshing beverages crafted with excellence." />
+  <meta name="twitter:image" content="https://www.ibexxorganics.com/assets/img/og-banner.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Ibexx Organics",
+    "url": "https://www.ibexxorganics.com/",
+    "logo": "https://www.ibexxorganics.com/assets/img/logo.png",
+    "description": "Ibexx Organics is a Chhattisgarh-based indigenous brand delivering premium packaged drinking water and refreshing beverages.",
+    "sameAs": [
+      "https://www.instagram.com/",
+      "https://www.facebook.com/"
+    ]
+  }
+  </script>
 </head>
 
 <body>
-    <h1>IBEXX Organics</h1>
 
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#home">
+        <img src="assets/img/logo.png" alt="Ibexx Organics Logo" class="brand-logo">
+        <span>IBEXX ORGANICS</span>
+      </a>
 
-    <body>
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg bg-white shadow-sm px-4">
-            <div class="container-fluid">
+      <div class="collapse navbar-collapse justify-content-center" id="mainMenu">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="#vision">Sustainability & Growth</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contacts</a></li>
+        </ul>
+      </div>
 
-                <a class="navbar-brand text-warning fw-bold d-flex align-items-center" href="#">
-                    <img src="images/logo.png" width="40" class="me-2">
-                    IBEXX ORGANICS
-                </a>
+      <a href="#products" class="btn custom-btn nav-cta">Our Products</a>
+    </div>
+  </nav>
 
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-                    ☰
-                </button>
+  <!-- HERO -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="hero-header text-center" data-aos="fade-up">
+        <h1>Pure Hydration, Fresh in Every Drop.</h1>
+      </div>
 
-                <div class="collapse navbar-collapse justify-content-center" id="menu">
-                    <ul class="navbar-nav cursor: pointer">
-                        <li class="nav-item"><a class="nav-link">Home</a></li>
-                        <li class="nav-item"><a class="nav-link">Sustainability & Growth</a></li>
-                        <li class="nav-item"><a class="nav-link">Products</a></li>
-                        <li class="nav-item"><a class="nav-link">Contacts</a></li>
-                    </ul>
-                </div>
+      <div class="hero-box" data-aos="zoom-in" data-aos-delay="100">
+        <div class="hero-overlay-content text-center">
+          <p>
+            The Spirit of Chhattisgarh - Premium packaged drinking water and
+            refreshing beverages crafted with excellence.
+          </p>
 
-                <button class="btn btn-warning rounded-pill">Our Products</button>
+          <div class="hero-btn-group">
+            <a href="#products" class="btn custom-btn">Explore Products</a>
+            <a href="#about" class="btn custom-btn light-btn">Our Story</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- ABOUT -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6" data-aos="zoom-out-up">
+          <div class="about-img-wrap">
+            <img src="assets/img/Juice1.png" alt="Ibexx beverage bottle splash visual" class="about-img">
+          </div>
+        </div>
+
+        <div class="col-lg-6 text-center text-lg-start" data-aos="fade-left">
+          <h5 class="section-mini-title">About Us</h5>
+          <h2 class="about-title">Born in Chhattisgarh.<br>Crafted for Pure Hydration.</h2>
+          <p class="about-text">
+            Ibexx Organics is a proud indigenous brand committed to delivering premium
+            packaged drinking water with world-class quality and safety standards.
+          </p>
+          <a href="#contact" class="btn custom-btn small-btn">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <!-- <section id="products" class="products-section">
+    <div class="container text-center">
+      <div data-aos="fade-up">
+        <h2 class="section-title">Our Products</h2>
+      </div>
+
+      <div class="row g-4 justify-content-center mt-4">
+        <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+          <div class="product-card">
+            <img src="assets/img/product-1.png" alt="Orange beverage by Ibexx Organics" class="product-img">
+            <div class="product-content">
+              <h5>Orange Drink</h5>
+              <p>Refreshing citrus flavor with premium quality packaging.</p>
             </div>
-        </nav>
+          </div>
+        </div>
 
-
-
-        <section class="py-5">
-            <div class="container text-center">
-
-                <h1 class="fw-bold mb-4">
-                    Pure Hydration, Fresh in Every Drop.
-                </h1>
-
-                <div class="hero-box text-white">
-
-                    <p class="hero-text mb-3 pt-pb-4">
-                        The Spirit of Chhattisgarh - Premium packaged drinking water</br>
-                        and refreshing beverages crafted with excellence.
-                    </p>
-
-                    <div>
-                        <button class="btn btn-light rounded-pill me-2 mb-2 text-warning fw-bold">Explore
-                            Products</button>
-                        <button class="btn btn-light rounded-pill mb-2 fw-bold">Our Story</button>
-                    </div>
-
-                </div>
-
+        <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="product-card">
+            <img src="assets/img/product-2.png" alt="Berry beverage by Ibexx Organics" class="product-img">
+            <div class="product-content">
+              <h5>Berry Juice</h5>
+              <p>Bold taste, rich color, and crafted for a vibrant refreshment.</p>
             </div>
-        </section>
+          </div>
+        </div>
 
+        <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="product-card">
+            <img src="assets/img/product-3.png" alt="Green detox beverage by Ibexx Organics" class="product-img">
+            <div class="product-content">
+              <h5>Green Detox</h5>
+              <p>Clean, fresh, and designed for a healthy hydration experience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
 
-        <!-- ABOUT -->
-        <section class="py-5">
-            <div class="container">
+  <!-- WHY CHOOSE -->
+  <section id="vision" class="why-section">
+    <div class="container text-center">
+      <div data-aos="fade-up">
+        <h2 class="section-title">Why Choose Ibexx Organics?</h2>
+      </div>
 
-                <div class="row align-items-center g-4">
+      <div class="row justify-content-center align-items-start g-4 mt-5">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+          <div class="feature-box">
+            <div class="feature-icon">
+              <img src="assets/img/icon-location.png" alt="100 percent indigenous icon">
+            </div>
+            <h5>100% Indigenous</h5>
+            <p>
+              Vocal for Local: We are 100% indigenous, supporting local growth
+              and representing the rising industrial spirit of Chhattisgarh.
+            </p>
+          </div>
+        </div>
 
-                    <!-- Image -->
-                    <div class="col-12 col-md-6 text-center">
-                        <img src=".">
-                    </div>
-                    <!-- Text -->
-                    <div class="col-12 col-md-6 text-center">
-                        <h5 class="fw-bold">About Us</h5>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-box center-box">
+            <div class="feature-icon center-logo">
+              <img src="assets/img/ibexx-standard.png" alt="Ibexx Standard">
+            </div>
+            <h5>The Ibexx Standard</h5>
+            <p>
+              “Ibexx” stands for agility and strength. We bring that same energy
+              to our production, ensuring no compromise on consumer experience.
+            </p>
+          </div>
+        </div>
 
-                        <h2 class="text-warning fw-bold">
-                            Born in Chhattisgarh.<br>Crafted for Pure Hydration.
-                        </h2>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-box">
+            <div class="feature-icon">
+              <img src="assets/img/icon-shield.png" alt="Certified excellence icon">
+            </div>
+            <h5>Certified Excellence</h5>
+            <p>
+              Our operations are backed by rigorous standards, ensuring every drop
+              is safe, crisp, and refreshing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+<footer class="ibexx-footer">
+    <div class="container">
+        <div class="ibexx-footer-box">
+            <div class="row g-4">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <img src="assets/img/logo.png" alt="Ibexx Organics Logo">
+                            <span>IBEXX ORGANICS</span>
+                        </div>
                         <p>
-                            Ibexx Organics is a proud indigenous </br> brand committed to delivering premium
-                            </br>packaged drinking water with world-class </br>quality and safety standards.
+                            The Spirit of Chhattisgarh. Premium packaged drinking water
+                            and refreshing beverages crafted with excellence and regional pride.
                         </p>
-                        <button class="btn btn-warning rounded-pill">Learn More ></button>
                     </div>
+                </div>
 
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#vision">Vision & Mission</a></li>
+                            <li><a href="#products">Products</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-links">
+                        <h4>Our Products</h4>
+                        <ul>
+                            <li><a href="#">Packaged Drinking Water</a></li>
+                            <li><a href="#">Premium Soft Drinks</a></li>
+                            <li><a href="#">Classic Milkshakes</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-contact">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li>
+                                <span class="footer-icon">📍</span>
+                                Plot no 273/5, Bhatgaon chowk, village Bechera,<br>
+                                District- Mungeli CG 495334
+                            </li>
+                            <li>
+                                <span class="footer-icon">📞</span>
+                                <a href="tel:+918378801070">+91 837 880 1070</a>
+                            </li>
+                            <li>
+                                <span class="footer-icon">✉</span>
+                                <a href="mailto:sales@ibexxorganics.com">sales@ibexxorganics.com</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
             </div>
-        </section>
+        </div>
 
-
-        <!-- PRODUCTS -->
-        <section class="py-5 bg-light text-center">
-            <div class="container">
-
-                <h2 class="mb-5">Our Products</h2>
-
-                <div class="row g-4">
-
-                    <div class="col-md-4">
-                        <div class="card border-0 shadow rounded-4">
-                            <img src="images/product1.png" class="card-img-top">
-                            <div class="card-body">
-                                <h5>Orange Juice</h5>
-                                <p>Fresh and natural drink.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card border-0 shadow rounded-4">
-                            <img src="images/product2.png" class="card-img-top">
-                            <div class="card-body">
-                                <h5>Berry Juice</h5>
-                                <p>Rich in antioxidants.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card border-0 shadow rounded-4">
-                            <img src="images/product3.png" class="card-img-top">
-                            <div class="card-body">
-                                <h5>Green Detox</h5>
-                                <p>Healthy and refreshing.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- Bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    </body>
-
-</html>
+        <div class="footer-bottom">
+            <p>2026 Ibexx Organics Private Limited. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 900,
+      once: true,
+      offset: 80
+    });
+  </script>
 </body>
-
-</html>
-</body>
-
 </html>
