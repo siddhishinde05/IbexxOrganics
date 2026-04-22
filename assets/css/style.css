@@ -124,16 +124,16 @@ body {
 }
 
 .hero-box {
-    min-height: 470px;
-    border-radius: 40px;
-    background: url('../img/banner/Background_img.jpeg') no-repeat center center;
+    min-height: 480px;
+    border-radius: 60px;
+    background: url('../img/banner/Bannerpng.png') no-repeat center center;
     background-size: cover;
     position: relative;
     overflow: hidden;
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    padding: 42px 28px;
+    padding: 32px 28px;
     box-shadow: var(--shadow-soft);
 }
 
@@ -154,22 +154,33 @@ body {
 }
 
 .hero-overlay-content p {
-    font-size: clamp(18px, 2vw, 30px);
+    font-size: clamp(14px, 2vw, 26px);
     line-height: 1.5;
     font-weight: 600;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
 
 .hero-btn-group {
     display: flex;
     justify-content: center;
-    gap: 14px;
+    gap: 10px;
     flex-wrap: wrap;
+    /* margin-top: -4px;
+    margin-left: -4px; */
+}
+
+.hero-btn-group .btn {
+    flex: 1;
+    max-width: 200px;
+    max-height: 40px;
+    /* optional limit */
+    text-align: center;
 }
 
 /* ABOUT */
 .about-section {
     padding: 90px 0 70px;
+
 }
 
 .about-img-wrap {
@@ -184,18 +195,19 @@ body {
     max-width: 460px;
     border-radius: 36px;
     object-fit: cover;
-    box-shadow: var(--shadow-soft);
+    /* box-shadow: var(--shadow-soft); */
+
 }
 
 .section-mini-title {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     margin-bottom: 14px;
     color: #111;
 }
 
 .about-title {
-    font-size: clamp(30px, 4vw, 50px);
+    font-size: clamp(26px, 4vw, 40px);
     line-height: 1.15;
     font-weight: 800;
     color: var(--primary);
@@ -206,7 +218,7 @@ body {
     font-size: 18px;
     line-height: 1.8;
     color: #222;
-    max-width: 560px;
+    max-width: 360px;
     margin: 0 auto 26px;
 }
 
