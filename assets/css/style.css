@@ -22,7 +22,7 @@ html {
 }
 
 body {
-    background: var(--bg);
+    background: var(--white);
     color: var(--text);
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
@@ -45,8 +45,8 @@ body {
 }
 
 .brand-logo {
-    width: 42px;
-    height: 42px;
+    width: 287px;
+    height: 54px;
     object-fit: contain;
 }
 
@@ -69,7 +69,7 @@ body {
 
 .custom-btn {
     background: var(--primary);
-    color: #fff;
+    color: #FF7A09;
     border: 1px solid #fff;
     border-radius: 999px;
     padding: 12px 24px;
@@ -107,6 +107,8 @@ body {
 
 .nav-cta {
     white-space: nowrap;
+    width: 178px;
+    height: 47px;
 }
 
 /* HERO */
@@ -121,6 +123,8 @@ body {
     max-width: 980px;
     margin: 0 auto 34px;
     letter-spacing: -1.5px;
+    font-family: inter, sans-serif;
+    color: #333333;
 }
 
 .hero-box {
@@ -154,10 +158,12 @@ body {
 }
 
 .hero-overlay-content p {
-    font-size: clamp(14px, 2vw, 26px);
+    font-size: clamp(20px, 2vw, 26px);
     line-height: 1.5;
     font-weight: 600;
     margin-bottom: 16px;
+    font: size 20px, !important;
+    ;
 }
 
 .hero-btn-group {
@@ -179,46 +185,56 @@ body {
 
 /* ABOUT */
 .about-section {
-    padding: 90px 0 70px;
-
+    padding: 0 0 0;
+    /* Remove bottom padding */
+    margin-top: -60px;
+    /* Adjust more negative margin to reduce the gap */
+    position: relative;
+    z-index: 2;
 }
 
 .about-img-wrap {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    /* Align left */
     align-items: center;
+    /* Center align vertically */
     background-color: transparent !important;
+    margin-bottom: -30px;
+    /* Pull the image upwards */
+    margin-right: 40px;
 }
 
 .about-img {
     width: 100%;
-    max-width: 460px;
+    max-width: 660px;
     border-radius: 36px;
     object-fit: cover;
-    /* box-shadow: var(--shadow-soft); */
-
+    margin-right: 0;
+    /* Remove right margin */
 }
 
 .section-mini-title {
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 32px;
+    font-weight: 800;
     margin-bottom: 14px;
-    color: #111;
+    color: #333333;
 }
 
 .about-title {
-    font-size: clamp(26px, 4vw, 40px);
+    font-size: clamp(20px, 4vw, 40px);
     line-height: 1.15;
     font-weight: 800;
-    color: var(--primary);
+    color: #FA7218;
     margin-bottom: 20px;
+    font-size: 22px !important;
 }
 
 .about-text {
-    font-size: 18px;
+    font-size: 22px;
     line-height: 1.8;
-    color: #222;
-    max-width: 360px;
+    color: #333333;
+    max-width: 620px;
     margin: 0 auto 26px;
 }
 
@@ -234,6 +250,8 @@ body {
     line-height: 1.15;
     letter-spacing: -1px;
     margin-bottom: 0;
+    color: #333333;
+    font-size: 30px !important;
 }
 
 /* PRODUCTS */
@@ -314,15 +332,15 @@ body {
     font-size: 22px;
     font-weight: 800;
     margin-bottom: 10px;
-    color: #b16c18;
+    color: #A94B24;
 }
 
 .feature-box p {
-    max-width: 310px;
     margin: 0 auto;
-    color: #222;
-    font-size: 15px;
+    color: #333333;
+    font-size: 16px;
     line-height: 1.7;
+    font-weight: 500;
 }
 
 .ibexx-footer {
@@ -342,8 +360,8 @@ body {
 }
 
 .footer-logo img {
-    width: 42px;
-    height: 42px;
+    width: 287px;
+    height: 54px;
     object-fit: contain;
 }
 
@@ -359,13 +377,13 @@ body {
     line-height: 1.8;
     margin: 0;
     max-width: 230px;
-    color: #fff;
+    color: #333333 !important;
 }
 
 .footer-links h4,
 .footer-contact h4 {
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 20px !important;
+    font-weight: 600 !important;
     margin-bottom: 18px;
     color: #fff;
 }
@@ -375,6 +393,7 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
+    color: #333333 !important;
 }
 
 .footer-links ul li,
@@ -382,13 +401,13 @@ body {
     margin-bottom: 12px;
     font-size: 14px;
     line-height: 1.7;
-    color: #fff;
+    color: #333333 !important;
 }
 
 .footer-links ul li a,
 .footer-contact ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #333333 !important;
     transition: 0.3s ease;
 }
 
@@ -413,6 +432,8 @@ body {
     font-size: 13px;
     color: #111;
     font-weight: 500;
+    text-align: left!important;
+    align-items: left;
 }
 
 .ibexx-footer {
@@ -425,13 +446,13 @@ body {
 
 .ibexx-footer-box {
     background: #f6a10a;
-    padding: 34px 28px 30px;
+    padding: 54px 54px 54px;
     color: #fff;
 
     /* Important for same shape */
-    border-top-left-radius: 34px;
+    border-top-left-radius: 74px;
     border-top-right-radius: 0;
-    border-bottom-right-radius: 34px;
+    border-bottom-right-radius: 74px;
     border-bottom-left-radius: 0;
 }
 
@@ -443,8 +464,8 @@ body {
 }
 
 .footer-logo img {
-    width: 34px;
-    height: 34px;
+    width: 287px;
+    height: 54px;
     object-fit: contain;
 }
 
@@ -458,7 +479,7 @@ body {
 
 .footer-brand p {
     margin: 0;
-    max-width: 210px;
+    max-width: 310px;
     font-size: 14px;
     line-height: 1.8;
     color: #fff;
@@ -483,7 +504,7 @@ body {
 .footer-links ul li,
 .footer-contact ul li {
     margin-bottom: 8px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.7;
     color: #fff;
     font-weight: 500;
@@ -580,8 +601,8 @@ body {
 
 @media (max-width: 767px) {
     .brand-logo {
-        width: 36px;
-        height: 36px;
+        width: 250px;
+        height: 56px;
     }
 
     .navbar-brand span {
