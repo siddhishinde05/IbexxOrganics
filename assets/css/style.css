@@ -321,7 +321,7 @@ body {
     }
 }
 
-/* For Mobile Devices */
+ /* For Mobile Devices */
 @media (max-width: 767px) {
     .about-section {
         padding-top: 40px;
