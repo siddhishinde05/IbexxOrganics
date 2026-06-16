@@ -131,7 +131,7 @@ body {
 .hero-box {
     min-height: 480px;
     border-radius: 60px;
-    background: url('../img/banner/Bannerpng.png') no-repeat center center;
+    background: url('../img/banner/bottle.jpg.jpeg') no-repeat center center;
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -321,7 +321,7 @@ body {
     }
 }
 
- /* For Mobile Devices */
+/* For Mobile Devices */
 @media (max-width: 767px) {
     .about-section {
         padding-top: 40px;
